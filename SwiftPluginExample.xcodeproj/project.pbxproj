@@ -172,10 +172,13 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				OBJROOT = "${SRCROOT}/.tmp/SharedBuildResults";
 				PRODUCT_NAME = SwiftPluginExample;
 				SDKROOT = macosx;
+				SHARED_PRECOMPS_DIR = "${SRCROOT}/.tmp/SharedPCH";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftPluginExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYMROOT = "Build Results";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
@@ -192,9 +195,12 @@
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Bundles";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				OBJROOT = "${SRCROOT}/.tmp/SharedBuildResults";
 				PRODUCT_NAME = SwiftPluginExample;
 				SDKROOT = macosx;
+				SHARED_PRECOMPS_DIR = "${SRCROOT}/.tmp/SharedPCH";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftPluginExample-Bridging-Header.h";
+				SYMROOT = "Build Results";
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
@@ -225,6 +231,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "";
+				SYMROOT = "Build Results";
 			};
 			name = Debug;
 		};
@@ -253,6 +260,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = "";
+				SYMROOT = "Build Results";
 			};
 			name = Release;
 		};
